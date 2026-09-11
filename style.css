@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary: #046d39;
+  --primary-hover: #03532b;
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+  --border-color: #e2e8f0;
+  --border-focus: #046d39;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --radius: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.header img {
+  max-width: 380px;
+  height: auto;
+  object-fit: contain;
+}
+
+.header p {
+  font-size: 18px;
+  color: var(--text-main);
+  font-weight: 700;
+  margin-top: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 6px;
+}
+
+.caixa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.select {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.caixa02, .input-caixa {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.caixa02 input, .input-caixa input, select {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  border-radius: var(--radius);
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+  box-shadow: none;
+}
+
+.caixa02 input:focus, .input-caixa input:focus, select:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(4, 109, 57, 0.15);
+}
+
+.btn {
+  margin-top: 8px;
+}
+
+.btn button {
+  width: 100%;
+  border-radius: var(--radius);
+  height: 44px;
+  background-color: var(--primary);
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: none;
+}
+
+.btn button:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn button:active {
+  transform: scale(0.98);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}

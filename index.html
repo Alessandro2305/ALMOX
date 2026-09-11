@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+    <title>ALMOXERIFADO</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="img/Logo ust.png" alt="usina santa">
+            <p>CONSULTA DE ESTOQUE</p>
+
+        </div>
+
+        <div class="caixa">
+            <div class="select">
+                <div class="caixa02">
+                    <div class="text">
+                        🏢
+                        <label for="Filial">Filial</label>
+                    </div>
+
+                    <select name="Selecione Filial" id="filial">
+                        <option value="1">1 - Iguatemi</option>
+                        <option value="2">2 - Tapejara</option>
+                        <option value="3">3 - Patanacity</option>
+                        <option value="4">4 - Ivaté</option>
+                        <option value="13">13 - Terra Rica</option>
+                        <option value="15" selected>15 - Rondon</option>
+                        <option value="16">16 - Cidade Gaúcha</option>
+                        <option value="18">18 - Moreira Sales</option>
+                        <option value="72">72 - Rio Paraná </option>
+                    </select>
+                </div>
+
+                <div class="caixa02">
+                    <div class="text">
+                        🏠
+                        <label for="deposito">Deposito</label>
+                    </div>
+                    <input type="number" name="deposito" id="deposito" placeholder="Deposito" required>
+                </div>
+            </div>
+
+
+
+            <div class="select">
+                <div class="input-caixa">
+                    <div class="text">
+                        📅
+                        <label for="hora">Data</label>
+                    </div>
+                    <input type="date" name="data" id="data" placeholder="Digite a Data" required>
+                </div>
+                <div class="input-caixa">
+                    <div class="text">
+                        🕐
+                        <label for="hora">Horario</label>
+                    </div>
+                    <input type="time" name="time" id="time" required>
+                </div>
+            </div>
+
+            <div class="input-caixa">
+                <div class="text">
+                    🔎
+                    <label for="codigo">Buscar peça</label>
+                </div>
+                <input type="text" name="busca-peca" id="buscarPeca" placeholder="Digite o código ou nome da peça..."
+                    autocomplete="off" required>
+            </div>
+
+            <div class="input-caixa">
+                <div class="text">
+                    📦
+                    <label for="item">Descrição da peça</label>
+                </div>
+                <input type="text" name="item" id="descricaoPeca" disabled placeholder="Descrição da peça" readonly>
+            </div>
+
+            <div id="resultado-pecas"></div>
+
+            <div class="btn">
+                <button type="submit">🚀CONSULTAR</button>
+            </div>
+        </div>
+
+        <h2>© 2026 Usina Santa Terezinha | Gestão de Estoque</h2>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
